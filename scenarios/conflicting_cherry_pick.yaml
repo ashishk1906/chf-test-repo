@@ -1,0 +1,17 @@
+{
+  "name": "conflicting_cherry_pick",
+  "description": "A release-line auth fix conflicts with Reliance tenant-specific auth behavior.",
+  "tenant": "reliance",
+  "target_branch": "tenant/reliance-v1.0.0",
+  "source_branch": "release/1.0.0",
+  "expected_result": "blocked",
+  "strategy": "linear",
+  "blockers": [
+    {
+      "code": "CHERRY_PICK_CONFLICT",
+      "message": "conflict in src/auth/session.py",
+      "data": { "files": ["src/auth/session.py"] }
+    }
+  ],
+  "generated_files": []
+}

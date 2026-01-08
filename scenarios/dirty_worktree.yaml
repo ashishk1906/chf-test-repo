@@ -1,0 +1,17 @@
+{
+  "name": "dirty_worktree",
+  "description": "The target Tata tenant branch has uncommitted changes before the hotfix is applied.",
+  "tenant": "tata",
+  "target_branch": "tenant/tata-v1.0.0",
+  "source_branch": "release/1.0.0",
+  "expected_result": "blocked",
+  "strategy": "preflight",
+  "blockers": [
+    {
+      "code": "DIRTY_WORKTREE",
+      "message": "target worktree has uncommitted changes",
+      "data": { "files": ["tenants/tata/settings.json"] }
+    }
+  ],
+  "generated_files": []
+}

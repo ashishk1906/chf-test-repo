@@ -1,0 +1,11 @@
+{
+  "name": "clean_cherry_pick",
+  "description": "A release-line billing fix applies cleanly onto the Airtel tenant branch.",
+  "tenant": "airtel",
+  "target_branch": "tenant/airtel-v1.0.0",
+  "source_branch": "release/1.0.0",
+  "expected_result": "clean",
+  "strategy": "linear",
+  "blockers": [],
+  "generated_files": []
+}

@@ -1,0 +1,17 @@
+{
+  "name": "missing_dependency_commit",
+  "description": "The selected auth fix depends on an earlier schema commit that was not selected.",
+  "tenant": "reliance",
+  "target_branch": "tenant/reliance-v1.0.0",
+  "source_branch": "release/1.0.0",
+  "expected_result": "blocked",
+  "strategy": "linear",
+  "blockers": [
+    {
+      "code": "MISSING_DEPENDENCY_COMMIT",
+      "message": "selected hotfix requires config/schema.py from a prior commit",
+      "data": { "missing_files": ["config/schema.py"] }
+    }
+  ],
+  "generated_files": []
+}

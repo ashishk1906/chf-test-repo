@@ -1,0 +1,11 @@
+{
+  "name": "rewritten_history",
+  "description": "The same effective billing patch exists on Tata with a different commit SHA.",
+  "tenant": "tata",
+  "target_branch": "tenant/tata-v1.0.0",
+  "source_branch": "release/1.0.0",
+  "expected_result": "already_applied_equivalent_patch",
+  "strategy": "patch_id",
+  "blockers": [],
+  "generated_files": []
+}

@@ -1,0 +1,16 @@
+{
+  "name": "generated_files",
+  "description": "A hotfix touches source config plus generated output that should be excluded.",
+  "tenant": "airtel",
+  "target_branch": "tenant/airtel-v1.0.0",
+  "source_branch": "release/1.0.0",
+  "expected_result": "clean_with_generated_exclusion",
+  "strategy": "linear",
+  "blockers": [],
+  "generated_files": [
+    {
+      "path": "dist/generated_config.json",
+      "reason": "generated artifact; rebuild on install"
+    }
+  ]
+}

@@ -379,32 +379,6 @@ git push origin --tags
 If you generate all scenarios, each scenario is a separate git repo. Usually,
 push each scenario repo to a separate GitHub repository.
 
-## What Is Upgraded Compared To The Old Script
-
-The old `create_repo.sh` style generated one fixed demo history.
-
-This factory is upgraded because it:
-
-- supports `--scenario all`
-- supports `--scenario <name>`
-- supports `--list`
-- creates a separate repo per scenario
-- keeps scenario definitions in `scenarios/*.yaml`
-- exposes the expected command shape:
-  `python scripts/repo_factory.py --scenario clean_cherry_pick --output ./output`
-- creates `expected.json` for harness/eval usage
-- creates `manifest.json` with a checksum
-- keeps A/R/T tenant branches in every generated repo
-- plants clean cherry-pick, conflict, rewritten-history, generated-file,
-  missing-dependency, and dirty-worktree cases
-
-Short version:
-
-```text
-old script = one demo repo history
-new script = deterministic scenario repo generator for agent testing
-```
-
 ## Folder Contents
 
 Before running:
